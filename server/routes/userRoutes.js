@@ -6,10 +6,15 @@ const router = express.Router();
 
 router.post("/register", registerUser);
 
-router.post("/login", validateOldToken, loginUser);
+// router.post("/login", validateOldToken, loginUser);
+
+router.route("/login").post(validateOldToken,loginUser);
 
 router.get("/current",validateToken, currentUser);
 
 router.post("/logout", logoutUser);
+
+//router.route("/sanpham").get(getSanPham).post(dangNhap,updateSanPham)
+
 
 module.exports = router;

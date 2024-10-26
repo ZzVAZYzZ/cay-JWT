@@ -2,6 +2,7 @@
   "name": "client",
   "version": "0.1.0",
   "dependencies": {
+    "client": "file:",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-scripts": "5.0.1"
